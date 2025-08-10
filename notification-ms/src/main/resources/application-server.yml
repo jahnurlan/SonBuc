@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: notification-ms
+  kafka:
+    bootstrap-servers: localhost:9092
+server:
+  port: 8082
+  servlet:
+    context-path: /notification

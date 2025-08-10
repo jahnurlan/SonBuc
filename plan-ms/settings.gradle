@@ -1,0 +1,7 @@
+rootProject.name = 'plan-ms'
+include 'common-security'
+include 'common-exception'
+
+project(':common-exception').projectDir = new File(settingsDir, '../common-exception')
+project(':common-security').projectDir = new File(settingsDir, '../common-security')
+

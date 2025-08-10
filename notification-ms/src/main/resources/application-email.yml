@@ -1,0 +1,15 @@
+spring:
+  mail:
+    host: sonbuc.com               # SMTP sunucu adresi
+    port: 465                      # SSL için 465, STARTTLS için 587 olabilir
+    username: info@sonbuc.com      # SMTP kullanıcı adı (mail adresi)
+    password: "ruberu%571"         # Parola (özel karakter varsa tırnak içinde)
+    protocol: smtp                 # SMTP protokolü
+    properties:
+      mail:
+        smtp:
+          auth: true               # SMTP kimlik doğrulama
+          ssl:
+            enable: true           # SSL aktif (465 portu için)
+          starttls:
+            enable: false          # STARTTLS kapalı (465 portunda)

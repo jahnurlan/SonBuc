@@ -1,0 +1,10 @@
+feign:
+  client:
+    plan-service:
+      url: http://plan-ms:8083
+    user-service:
+      url: http://user-ms:8080
+    timer-service:
+      url: http://timer-ms:8089
+    workspace-service:
+      url: http://workspace-ms:9393

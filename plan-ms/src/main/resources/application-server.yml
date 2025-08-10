@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: plan-service
+  cache:
+    type: caffeine
+
+server:
+  port: 8083
+  servlet:
+    context-path: /plan

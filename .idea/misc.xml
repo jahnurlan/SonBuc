@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/admin-ms" />
+    <file type="web" url="file://$PROJECT_DIR$/chat-ms" />
+    <file type="web" url="file://$PROJECT_DIR$/common-email" />
+    <file type="web" url="file://$PROJECT_DIR$/common-exception" />
+    <file type="web" url="file://$PROJECT_DIR$/common-notification" />
+    <file type="web" url="file://$PROJECT_DIR$/common-security" />
+    <file type="web" url="file://$PROJECT_DIR$/notification-ms" />
+    <file type="web" url="file://$PROJECT_DIR$/plan-ms" />
+    <file type="web" url="file://$PROJECT_DIR$/timer-ms" />
+    <file type="web" url="file://$PROJECT_DIR$/user-ms" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace-ms" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

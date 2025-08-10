@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1033802567/admin-ms.common-exception.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1033802567/admin-ms.common-exception.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1560716694/admin-ms.common-security.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1560716694/admin-ms.common-security.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/admin-ms.main.iml" filepath="$PROJECT_DIR$/.idea/modules/admin-ms.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1560716694/chat-ms.common-security.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1560716694/chat-ms.common-security.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chat-ms.main.iml" filepath="$PROJECT_DIR$/.idea/modules/chat-ms.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/com.ronine.iml" filepath="$PROJECT_DIR$/.idea/com.ronine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-exception.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common-exception.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-notification.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common-notification.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-585716474/notification-ms.common-email.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-585716474/notification-ms.common-email.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1033802567/notification-ms.common-exception.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1033802567/notification-ms.common-exception.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2061737025/notification-ms.common-notification.main.iml" filepath="$PROJECT_DIR$/.idea/modules/2061737025/notification-ms.common-notification.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/notification-ms.main.iml" filepath="$PROJECT_DIR$/.idea/modules/notification-ms.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1033802567/plan-ms.common-exception.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1033802567/plan-ms.common-exception.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1560716694/plan-ms.common-security.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1560716694/plan-ms.common-security.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plan-ms.main.iml" filepath="$PROJECT_DIR$/.idea/modules/plan-ms.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1033802567/timer-ms.common-exception.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1033802567/timer-ms.common-exception.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1560716694/timer-ms.common-security.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1560716694/timer-ms.common-security.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/timer-ms.main.iml" filepath="$PROJECT_DIR$/.idea/modules/timer-ms.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-585716474/user-ms.common-email.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-585716474/user-ms.common-email.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1033802567/user-ms.common-exception.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1033802567/user-ms.common-exception.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2061737025/user-ms.common-notification.main.iml" filepath="$PROJECT_DIR$/.idea/modules/2061737025/user-ms.common-notification.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1560716694/user-ms.common-security.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1560716694/user-ms.common-security.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-ms.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-ms.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1033802567/workspace-ms.common-exception.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1033802567/workspace-ms.common-exception.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1560716694/workspace-ms.common-security.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1560716694/workspace-ms.common-security.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/workspace-ms.main.iml" filepath="$PROJECT_DIR$/.idea/modules/workspace-ms.main.iml" />
+    </modules>
+  </component>
+</project>

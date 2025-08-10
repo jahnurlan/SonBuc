@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: timer-service
+
+server:
+  port: 8089
+  servlet:
+    context-path: /time

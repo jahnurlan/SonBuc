@@ -1,0 +1,224 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 132120576 bytes for G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3536), pid=7720, tid=384
+#
+# JRE version:  (19.0.2+7) (build )
+# Java VM: OpenJDK 64-Bit Server VM (19.0.2+7-FR, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dorg.gradle.internal.worker.tmpdir=C:\Users\Public\com.ronine\common-email\build\tmp\test\work -Dorg.gradle.native=false -Xmx512m -Dfile.encoding=windows-1252 -Duser.country=GB -Duser.language=en -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 1'
+
+Host: Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz, 8 cores, 7G,  Windows 11 , 64 bit Build 26100 (10.0.26100.4484)
+Time: Sun Aug 10 12:11:10 2025 Azerbaijan Standard Time elapsed time: 0.045509 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001da518aaef0):  JavaThread "Unknown thread" [_thread_in_vm, id=384, stack(0x0000000d76100000,0x0000000d76200000)]
+
+Stack: [0x0000000d76100000,0x0000000d76200000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6d034a]
+V  [jvm.dll+0x880f10]
+V  [jvm.dll+0x88289e]
+V  [jvm.dll+0x882f43]
+V  [jvm.dll+0x27b4bb]
+V  [jvm.dll+0x6cd13a]
+V  [jvm.dll+0x6c1d3a]
+V  [jvm.dll+0x351969]
+V  [jvm.dll+0x359076]
+V  [jvm.dll+0x3ad28a]
+V  [jvm.dll+0x3ad4cf]
+V  [jvm.dll+0x3261ea]
+V  [jvm.dll+0x3270a2]
+V  [jvm.dll+0x84d530]
+V  [jvm.dll+0x3ba241]
+V  [jvm.dll+0x82f013]
+V  [jvm.dll+0x43a3c3]
+V  [jvm.dll+0x43bdf1]
+C  [jli.dll+0x519f]
+C  [ucrtbase.dll+0x37b0]
+C  [KERNEL32.DLL+0x2e8d7]
+C  [ntdll.dll+0x3c34c]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ff80b24ace8, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000001da518de620 WorkerThread "GC Thread#0" [stack: 0x0000000d76200000,0x0000000d76300000] [id=15400]
+  0x000001da518e3580 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000000d76300000,0x0000000d76400000] [id=11184]
+  0x000001da518e3fb0 WorkerThread "G1 Conc#0" [stack: 0x0000000d76400000,0x0000000d76500000] [id=3240]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff80a9e75f7]
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000001da518a8e70] Heap_lock - owner thread: 0x000001da518aaef0
+
+Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 0.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 5 size 8 Array Of Cards #cards 12 size 40 Howl #buckets 4 coarsen threshold 1843 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 2048
+
+Heap:
+ garbage-first heap   total 0K, used 0K [0x00000000e0000000, 0x0000000100000000)
+  region size 1024K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff80add8059]
+
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.027 Loaded shared library C:\Users\nurla\.jdks\corretto-19.0.2\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6ce930000 - 0x00007ff6ce93d000 	C:\Users\nurla\.jdks\corretto-19.0.2\bin\java.exe
+0x00007ff882460000 - 0x00007ff8826c8000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff8818a0000 - 0x00007ff881969000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff87f5b0000 - 0x00007ff87f99d000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff87fa40000 - 0x00007ff87fb8b000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff876e10000 - 0x00007ff876e27000 	C:\Users\nurla\.jdks\corretto-19.0.2\bin\jli.dll
+0x00007ff85aa00000 - 0x00007ff85aa15000 	C:\Users\nurla\.jdks\corretto-19.0.2\bin\VCRUNTIME140.dll
+0x00007ff881370000 - 0x00007ff88153c000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff868060000 - 0x00007ff8682fa000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.4484_none_3e0e6d4ce32ef3b3\COMCTL32.dll
+0x00007ff881540000 - 0x00007ff8815e9000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff881340000 - 0x00007ff88136b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff87fc50000 - 0x00007ff87fc77000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff87fe90000 - 0x00007ff87ffc7000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff87ffd0000 - 0x00007ff880073000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff8822b0000 - 0x00007ff8822df000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ff828660000 - 0x00007ff8286fb000 	C:\Users\nurla\.jdks\corretto-19.0.2\bin\msvcp140.dll
+0x00007ff80a6b0000 - 0x00007ff80b389000 	C:\Users\nurla\.jdks\corretto-19.0.2\bin\server\jvm.dll
+0x00007ff8817d0000 - 0x00007ff881884000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff8809a0000 - 0x00007ff880a46000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff880200000 - 0x00007ff880318000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff862b50000 - 0x00007ff862b5a000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff8654f0000 - 0x00007ff865525000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff872f80000 - 0x00007ff872f8b000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff881110000 - 0x00007ff881184000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff87e350000 - 0x00007ff87e36b000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ff8768a0000 - 0x00007ff8768aa000 	C:\Users\nurla\.jdks\corretto-19.0.2\bin\jimage.dll
+0x00007ff87ccf0000 - 0x00007ff87cf31000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ff880d80000 - 0x00007ff881106000 	C:\WINDOWS\System32\combase.dll
+0x00007ff880ae0000 - 0x00007ff880bc0000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ff854b50000 - 0x00007ff854b93000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ff87f9a0000 - 0x00007ff87fa39000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff848c90000 - 0x00007ff848cb6000 	C:\Users\nurla\.jdks\corretto-19.0.2\bin\java.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\nurla\.jdks\corretto-19.0.2\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.4484_none_3e0e6d4ce32ef3b3;C:\Users\nurla\.jdks\corretto-19.0.2\bin\server
+
+VM Arguments:
+jvm_args: -Dorg.gradle.internal.worker.tmpdir=C:\Users\Public\com.ronine\common-email\build\tmp\test\work -Dorg.gradle.native=false -Xmx512m -Dfile.encoding=windows-1252 -Duser.country=GB -Duser.language=en -Duser.variant -ea 
+java_command: worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 1'
+java_class_path (initial): C:\\Users\\nurla\\.gradle\\caches\\8.7\\workerMain\\gradle-worker.jar;C:\\Users\\Public\\com.ronine\\common-email\\build\\classes\\java\\test;C:\\Users\\Public\\com.ronine\\common-email\\build\\classes\\java\\main;C:\\Users\\Public\\com.ronine\\common-notification\\build\\libs\\common-notification-0.0.1-SNAPSHOT-plain.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-mail\\2.7.15\\5df0e5ed9afb8ea48c47a3b42423893c07d49d84\\spring-boot-starter-mail-2.7.15.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-test\\2.7.15\\b9bf93cbd1c5d5d09dd798fca143e55cb0662777\\spring-boot-starter-test-2.7.15.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter\\2.7.15\\6ea75176edb5ba47addd6143b3e0fec25811be1d\\spring-boot-starter-2.7.15.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-context-support\\5.3.29\\49e4290bbf62177c3323365fbb4a16adb06095a5\\spring-context-support-5.3.29.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\com.sun.mail\\jakarta.mail\\1.6.7\\319df0e9d536c1a01acdfe49b6e82b97d2393073\\jakarta.mail-1.6.7.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-test-autoconfigure\\2.7.15\\f59ccd8f7db4c88bee112e59875a40767456664e\\spring-boot-test-autoconfigure-2.7.15.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-test\\2.7.15\\5a8442fcfc1750958460c55b255223434600aaf6\\spring-boot-test-2.7.15.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\com.jayway.jsonpath\\json-path\\2.7.0\\f9d7d9659f2694e61142046ff8a216c047f263e8\\json-path-2.7.0.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.xml.bind\\jakarta.xml.bind-api\\2.3.3\\48e3b9cfc10752fba3521d6511f4165bea951801\\jakarta.xml.bind-api-2.3.3.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.assertj\\assertj-core\\3.22.0\\c300c0c6a24559f35fa0bd3a5472dc1edcd0111e\\assertj-core-3.22.0.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.hamcrest\\hamcrest\\2.2\\1820c0968dba3a11a1b30669bb1f01978a91dedc\\hamcrest-2.2.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.mockito\\mockito-junit-jupiter\\4.5.1\\f81fb60bd69b3a6e5537ae23b883326f01632a61\\mockito-junit-jupiter-4.5.1.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-params\\5.8.2\\ddeafe92fc263f895bfb73ffeca7fd56e23c2cce\\junit-jupiter-params-5.8.2.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-engine\\5.8.2\\c598b4328d2f397194d11df3b1648d68d7d990e3\\junit-jupiter-engine-5.8.2.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-api\\5.8.2\\4c21029217adf07e4c0d0c5e192b6bf610c94bdc\\junit-jupiter-api-5.8.2.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-engine\\1.8.2\\b737de09f19864bd136805c84df7999a142fec29\\junit-platform-engine-1.8.2.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-commons\\1.8.2\\32c8b8617c1342376fd5af2053da6410d8866861\\junit-platform-commons-1.8.2.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter\\5.8.2\\5a817b1e63f1217e5c586090c45e681281f097ad\\junit-jupiter-5.8.2.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.mockito\\mockito-core\\4.5.1\\ed456e623e5afc6f4cee3ae58144e5c45f3b3bf\\mockito-core-4.5.1.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.skyscreamer\\jsonassert\\1.5.1\\6d842d0faf4cf6725c509a5e5347d319ee0431c3\\jsonassert-1.5.1.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-test\\5.3.29\\dc55cc20f39ba89b46d59aa948c818c642da1848\\spring-test-5.3.29.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-autoconfigure\\2.7.15\\ca07c5ec0347342e207de3d26c0b686d43be60d5\\spring-boot-autoconfigure-2.7.15.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot\\2.7.15\\4e09424cc410ca255bbea2657a8da0b54b381b2a\\spring-boot-2.7.15.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-context\\5.3.29\\c374a72716d19220ca142efaab910adf5717c5d0\\spring-context-5.3.29.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-aop\\5.3.29\\397c588ce63ba4c185a8c1bd2f1e9139075b3bf1\\spring-aop-5.3.29.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-beans\\5.3.29\\be40f557f3fa52c703f00e127ff639f8cf499617\\spring-beans-5.3.29.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-expression\\5.3.29\\44ac795a057c4a6360063801c54a2d148e5a2808\\spring-expression-5.3.29.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-core\\5.3.29\\528eafe4cef7bccf3df290dd99ac5833a9756183\\spring-core-5.3.29.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.xmlunit\\xmlunit-core\\2.9.1\\e5833662d9a1279a37da3ef6f62a1da29fcd68c4\\xmlunit-core-2.9.1.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-logging\\2.7.15\\1f4bece73c6e002fd0c113de552a746ab603b9be\\spring-boot-starter-logging-2.7.15.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.annotation\\jakarta.annotation-api\\1.3.5\\59eb84ee0d616332ff44aba065f3888cf002cd2d\\jakarta.annotation-api-1.3.5.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.yaml\\snakeyaml\\1.30\\8fde7fe2586328ac3c68db92045e1c8759125000\\snakeyaml-1.30.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\com.sun.activation\\jakarta.activation\\1.2.2\\74548703f9851017ce2f556066659438019e7eb5\\jakarta.activation-1.2.2.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\net.minidev\\json-smart\\2.4.11\\cc5888f14a5768f254b97bafe8b9fd29b31e872e\\json-smart-2.4.11.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\ch.qos.logback\\logback-classic\\1.2.12\\d4dee19148dccb177a0736eb2027bd195341da78\\logback-classic-1.2.12.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.logging.log4j\\log4j-to-slf4j\\2.17.2\\17dd0fae2747d9a28c67bc9534108823d2376b46\\log4j-to-slf4j-2.17.2.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\jul-to-slf4j\\1.7.36\\ed46d81cef9c412a88caef405b58f93a678ff2ca\\jul-to-slf4j-1.7.36.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\slf4j-api\\1.7.36\\6c62681a2f655b49963a5983b8b0950a6120ae14\\slf4j-api-1.7.36.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.activation\\jakarta.activation-api\\1.2.2\\99f53adba383cb1bf7c3862844488574b559621f\\jakarta.activation-api-1.2.2.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\net.bytebuddy\\byte-buddy\\1.12.23\\d470526e8c4566c04e9ae5d3ccb62d1a7aa58986\\byte-buddy-1.12.23.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\net.bytebuddy\\byte-buddy-agent\\1.12.23\\1cba11fdb72c383edacb909f79ae6870efd275e4\\byte-buddy-agent-1.12.23.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.objenesis\\objenesis\\3.2\\7fadf57620c8b8abdf7519533e5527367cb51f09\\objenesis-3.2.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\com.vaadin.external.google\\android-json\\0.0.20131108.vaadin1\\fa26d351fe62a6a17f5cda1287c1c6110dec413f\\android-json-0.0.20131108.vaadin1.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-jcl\\5.3.29\\4f84fbeec60adb1a50734b6077836e53844f0134\\spring-jcl-5.3.29.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\net.minidev\\accessors-smart\\2.4.11\\245ceca7bdf3190fbb977045c852d5f3c8efece1\\accessors-smart-2.4.11.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.opentest4j\\opentest4j\\1.2.0\\28c11eb91f9b6d8e200631d46e20a7f407f2a046\\opentest4j-1.2.0.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\ch.qos.logback\\logback-core\\1.2.12\\1d8e51a698b138065d73baefb4f94531faa323cb\\logback-core-1.2.12.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.logging.log4j\\log4j-api\\2.17.2\\f42d6afa111b4dec5d2aea0fe2197240749a4ea6\\log4j-api-2.17.2.jar;C:\\Users\\nurla\\.gradle\\caches\\modules-2\\files-2.1\\org.ow2.asm\\asm\\9.3\\8e6300ef51c1d801a7ed62d07cd221aca3a90640\\asm-9.3.jar;C:\\Users\\nurla\\.gradle\\wrapper\\dists\\gradle-8.7-bin\\bhs2wmbdwecv87pi65oeuq5iu\\gradle-8.7\\lib\\plugins\\junit-platform-engine-1.8.2.jar;C:\\Users\\nurla\\.gradle\\wrapper\\dists\\gradle-8.7-bin\\bhs2wmbdwecv87pi65oeuq5iu\\gradle-8.7\\lib\\plugins\\junit-platform-launcher-1.8.2.jar;C:\\Users\\nurla\\.gradle\\wrapper\\dists\\gradle-8.7-bin\\bhs2wmbdwecv87pi65oeuq5iu\\gradle-8.7\\lib\\plugins\\junit-platform-commons-1.8.2.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 132120576                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 536870912                                 {product} {command line}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 536870912                              {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\OpenSSL-Win64\bin;C:\Users\nurla\AppData\Local\Programs\Python\Launcher\;C:\Users\nurla\AppData\Local\Microsoft\WindowsApps;C:\Users\nurla\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\nurla\AppData\Roaming\npm;C:\Users\nurla\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\OpenSSL-Win64\bin;
+USERNAME=nurla
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 126 Stepping 5, GenuineIntel
+TMP=C:\Users\nurla\AppData\Local\Temp
+TEMP=C:\Users\nurla\AppData\Local\Temp
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 26100 (10.0.26100.4484)
+OS uptime: 0 days 14:14 hours
+Hyper-V role detected
+
+CPU: total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 126 stepping 5 microcode 0xa0, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, avx512f, avx512dq, avx512cd, avx512bw, avx512vl, sha, fma, vzeroupper, avx512_vpopcntdq, avx512_vpclmulqdq, avx512_vaes, avx512_vnni, clflush, clflushopt, avx512_vbmi2, avx512_vbmi, hv, rdtscp, rdpid, fsrm, gfni, avx512_bitalg
+
+Memory: 4k page, system-wide physical 7948M (671M free)
+TotalPageFile size 18461M (AvailPageFile size 39M)
+current process WorkingSet (physical memory assigned to process): 12M, peak: 12M
+current process commit charge ("private bytes"): 59M, peak: 185M
+
+vm_info: OpenJDK 64-Bit Server VM (19.0.2+7-FR) for windows-amd64 JRE (19.0.2+7-FR), built on Jan 13 2023 22:53:32 by "Administrator" with MS VC++ 15.9 (VS2017)
+
+END.
