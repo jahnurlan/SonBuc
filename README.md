@@ -187,7 +187,3 @@ Typical Kafka-driven workflows in this project:
 3. Validate your service-level changes before opening a PR.
 4. In PR descriptions, mention affected services and config/migration impact.
 
-## License
-
-A project license has not been added yet.
-If this repository will be open-sourced, add a `LICENSE` file.
